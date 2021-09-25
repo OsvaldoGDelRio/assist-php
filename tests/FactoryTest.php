@@ -228,6 +228,11 @@ class FactoryTest extends TestCase
         $consume =  new Consume($p1);
         $p = new Pregunta('1', ['0' => 'asssss','2' => 'eeeeee'], $consume);
         $this->assertSame('0',$p->numero());
+
+        $p1 = new PreguntaUno('2', ['2' => 'No']);
+        $consume =  new Consume($p1);
+        $p = new Pregunta('1', ['0' => 'asssss','2' => 'eeeeee'], $consume);
+        $this->assertSame('asssss',$p->texto());
     }
 
     public function testOtrosDevuelveElNombreCorrecto()
