@@ -11,7 +11,7 @@ class Consume
 
     /**
      *
-     * @param PreguntaInterface $preguntaUno
+     * @param PreguntaUno $preguntaUno
      */
     public function __construct(PreguntaUno $preguntaUno)
     {
