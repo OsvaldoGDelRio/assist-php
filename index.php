@@ -92,4 +92,9 @@ $factory = new Factory();
 
 $assist = $factory->crear('src\factory\PruebaAssist',$formulario);
 
+echo $assist->sustancia()->tabaco()->preguntaUno()->texto();
+echo $assist->sustancia()->tabaco()->preguntaUno()->numero();
 
+echo $assist->riesgo()->tabaco()->numero();
+echo $assist->riesgo()->tabaco()->texto();
+echo $assist->riesgo()->tabaco()->intervencion();
