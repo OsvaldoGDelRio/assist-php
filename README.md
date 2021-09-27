@@ -143,7 +143,7 @@ echo $assist->riesgo()->tabaco()->intervencion();
 
 En la carpeta web se encuentra el formulario con BOOTSTRAP y muestra los resultados con CKEDITOR 4
 
-[Ejmeplo](https://assist.ticsa.org.mx/)
+[Ejemplo](https://assist.ticsa.org.mx/)
 
 ### Información de la prueba
 
