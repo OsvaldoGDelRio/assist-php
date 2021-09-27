@@ -49,9 +49,9 @@ class Otros
 
     /**
      *
-     * @var string|null
+     * @var string
      */
-    private ?string $_nombre = 'Otros';
+    private string $_nombre = 'Otros';
     
     /**
      *
@@ -71,7 +71,7 @@ class Otros
         PreguntaInterface $preguntaCinco,
         PreguntaInterface $preguntaSeis,
         PreguntaInterface $preguntaSiete,
-        ?string $nombre = 'Otros'
+        string $nombre
     ) {
         $this->_preguntaUno = $preguntaUno;
         $this->_preguntaDos = $preguntaDos;

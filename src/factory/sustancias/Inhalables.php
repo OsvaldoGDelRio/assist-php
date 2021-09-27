@@ -6,17 +6,20 @@ use src\preguntas\Consume;
 use src\preguntas\Pregunta;
 use src\preguntas\PreguntaUno;
 use src\sustancias\Inhalables as SustanciasInhalables;
+use src\valores\Valores;
 
 class Inhalables implements FactoryClassInterface
 {
     public function crear(array $array): SustanciasInhalables
     {
-        $datosPregunta1 = require 'src/valores/PreguntaUno.php';
-        $datosPregunta2 = require 'src/valores/PreguntaDos.php';
-        $datosPregunta3 = require 'src/valores/PreguntaTres.php';
-        $datosPregunta4 = require 'src/valores/PreguntaCuatro.php';
-        $datosPregunta5 = require 'src/valores/PreguntaCinco.php';
-        $datosPregunta6 = require 'src/valores/PreguntaSeisSiete.php';
+        $valores = new Valores();
+
+        $datosPregunta1 = $valores->_preguntaUno;
+        $datosPregunta2 = $valores->_preguntaDos;
+        $datosPregunta3 = $valores->_preguntaTres;
+        $datosPregunta4 = $valores->_preguntaCuatro;
+        $datosPregunta5 = $valores->_preguntaCinco;
+        $datosPregunta6 = $valores->_preguntaSeisSiete;
 
         $p1 = new PreguntaUno($array['inhalables1'], $datosPregunta1);
         $consume = new Consume($p1);

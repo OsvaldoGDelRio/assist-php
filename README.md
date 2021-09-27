@@ -139,6 +139,9 @@ echo $assist->riesgo()->tabaco()->numero();
 echo $assist->riesgo()->tabaco()->texto();
 echo $assist->riesgo()->tabaco()->intervencion();
 ```
+### Ejemplo sencillo de implementación
+
+En la carpeta web se encuentra el formulario con BOOTSTRAP y muestra los resultados con CKEDITOR 4
 
 ### Información de la prueba
 
