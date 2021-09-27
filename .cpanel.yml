@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/redii9y7/assist.ticsa.org.mx
+    - /bin/cp -a * $DEPLOYPATH
