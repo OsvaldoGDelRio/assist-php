@@ -1,5 +1,11 @@
 <?php declare(strict_types=1); header('Set-Cookie: cross-site-cookie=bar; SameSite=None; Secure', false); ?>
 <!DOCTYPE html>
+<!--
+****************************************************************************************************************
+***************Todo el código fuente, incluido el del servidor lo puedes encontrar en:**************************
+***************https://github.com/OsvaldoGDelRio****************************************************************
+****************************************************************************************************************
+-->
 <html>
     <head>
         <title>Prueba de ASSIST</title>
@@ -2502,7 +2508,7 @@
     </div>
 </div>
 <footer class="container mt-5">
-  <p>Desarrollado por <a target="_blank" href="https://osvaldogonzalez.name/"> Osvaldo Noe Gonzalez Del Rio</a> &copy; <?php echo date("Y"); ?></p>
+  <p>Desarrollado por <a target="_blank" href="https://osvaldogonzalez.name/"> Osvaldo Noe Gonzalez Del Rio</a> &copy; <?php echo date("Y"); ?> <a href="https://github.com/OsvaldoGDelRio">GitHub</a></p>
 </footer>
 </main><!-- /.container -->
 </div>

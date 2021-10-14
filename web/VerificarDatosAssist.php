@@ -86,9 +86,9 @@ $assist = $factory->crear('src\factory\PruebaAssist',$formulario);
 			<td><?php echo $assist->sustancia()->sedantes()->preguntaDos()->numero(); ?></td>
 		</tr>
 		<tr>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaUno()->texto(); ?></td>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaDos()->texto(); ?></td>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaDos()->numero(); ?></td>
 		</tr>
@@ -180,10 +180,10 @@ $assist = $factory->crear('src\factory\PruebaAssist',$formulario);
 			<td><?php echo $assist->sustancia()->sedantes()->preguntaCuatro()->numero(); ?></td>
 		</tr>
 		<tr>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaTres()->texto(); ?></td>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaTres()->numero(); ?></td>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaCuatro()->texto(); ?></td>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaCuatro()->numero(); ?></td>
 		</tr>
@@ -275,10 +275,10 @@ $assist = $factory->crear('src\factory\PruebaAssist',$formulario);
 			<td><?php echo $assist->sustancia()->sedantes()->preguntaSeis()->numero(); ?></td>
 		</tr>
 		<tr>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaCinco()->texto(); ?></td>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaCinco()->numero(); ?></td>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaSeis()->texto(); ?></td>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaSeis()->numero(); ?></td>
 		</tr>
@@ -346,7 +346,7 @@ $assist = $factory->crear('src\factory\PruebaAssist',$formulario);
 			<td><?php echo $assist->sustancia()->sedantes()->preguntaSiete()->numero(); ?></td>
 		</tr>
 		<tr>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaSiete()->texto(); ?></td>
 			<td><?php echo $assist->sustancia()->alucinogenos()->preguntaSiete()->numero(); ?></td>
 		</tr>
@@ -422,7 +422,7 @@ $assist = $factory->crear('src\factory\PruebaAssist',$formulario);
 			<td><?php echo $assist->riesgo()->sedantes()->intervencion(); ?></td>
 		</tr>
 		<tr>
-			<th scope="row" style="text-align:left">&nbsp;Alucin&oacute;genos</th>
+			<th scope="row" style="text-align:left">Alucin&oacute;genos</th>
 			<td><?php echo $assist->riesgo()->alucinogenos()->numero(); ?></td>
 			<td><?php echo $assist->riesgo()->alucinogenos()->texto(); ?></td>
 			<td><?php echo $assist->riesgo()->alucinogenos()->intervencion(); ?></td>

@@ -10,6 +10,8 @@ use src\preguntas\Consume;
 use src\preguntas\Pregunta;
 use src\preguntas\PreguntaUno;
 use src\PruebaAssist as SrcPruebaAssist;
+use src\resultados\Resultados;
+use src\resultados\ResultadosEnObjeto;
 use src\sustancias\Alcohol as SustanciasAlcohol;
 use src\sustancias\Sustancias as SustanciasSustancias;
 
@@ -238,5 +240,15 @@ class FactoryTest extends TestCase
     public function testOtrosDevuelveElNombreCorrecto()
     {
         $this->assertSame('Floripondio', $this->prueba->sustancia()->otros()->nombre());
+    }
+
+    public function testResultadosDevuelveArrayCorrecto()
+    {
+        $resultados = new Resultados($this->prueba);
+        $this->assertIsArray($resultados->array());
+        $this->assertIsString($resultados->json());
+        $this->assertIsObject($resultados->object());
+        $this->assertSame('No',$resultados->array()['preguntas']['uno']['sustancias']['tabaco']['texto']);
+        $this->assertSame('No', $resultados->object()->preguntas->uno->sustancias->tabaco->texto);
     }
 }
