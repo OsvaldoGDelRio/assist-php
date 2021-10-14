@@ -139,6 +139,23 @@ echo $assist->riesgo()->tabaco()->numero();
 echo $assist->riesgo()->tabaco()->texto();
 echo $assist->riesgo()->tabaco()->intervencion();
 ```
+
+### Resultados
+
+En distintos formatos para enviar a vistas o al html o como respuesta a llamadas API
+
+```php
+    $factory = new Factory();
+    $assist = $factory->crear('src\factory\PruebaAssist',$formulario);
+    $resultados = new Resultados($assist);
+    //en array
+    $resultados->array();    
+    //en json
+    $resultados->json();
+    //en objeto
+    $resultados->object();
+```
+
 ### Ejemplo sencillo de implementación
 
 En la carpeta web se encuentra el formulario con BOOTSTRAP y muestra los resultados con CKEDITOR 4
